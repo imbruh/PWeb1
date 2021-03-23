@@ -1,0 +1,7 @@
+<div class="menu-background">
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="['/cadastrarUsuario']">Cadastrar Usuario</button>
+    <button mat-menu-item [routerLink]="['/listarUsuarios']">Listar Usuarios</button>
+  </mat-menu>
+</div>
