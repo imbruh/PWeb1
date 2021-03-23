@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import { UsuarioService } from 'src/app/shared/services/usuario.service';
 import {Usuario} from '../../shared/model/usuario';
-import {USUARIOS} from '../../shared/model/USUARIOS';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -10,18 +10,16 @@ import {USUARIOS} from '../../shared/model/USUARIOS';
 export class CadastroUsuarioComponent implements OnInit {
 
   usuario: Usuario;
-  usuarios: Array<Usuario>;
 
-  constructor() {
+  constructor(private usuarioService: UsuarioService) {
     this.usuario = new Usuario();
-    this.usuarios = USUARIOS;
   }
 
   ngOnInit(): void {
   }
 
   inserirUsuario(): void {
-    this.usuarios.push(this.usuario);
+    this.usuarioService.inserir(this.usuario);
     this.usuario = new Usuario();
   }
 
