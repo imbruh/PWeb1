@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
 import {UsuarioModule} from './usuario/usuario.module';
 import {LayoutModule} from './layout/layout.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {LayoutModule} from './layout/layout.module';
     MatInputModule,
     MatFormFieldModule,
     MatIconModule,
-    UsuarioModule
+    UsuarioModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
