@@ -21,4 +21,16 @@ export class UsuarioService {
   inserir(usuario: Usuario): Observable<Usuario> {
    return this.httpClient.post<Usuario>(this.url_usuarios, usuario);
   }
+
+  remover(id: number): Observable<object> {
+    return this.httpClient.delete(`${this.url_usuarios}/${id}`);
+  }
+
+  pesquisarPorId(id: number): Observable<Usuario> {
+    return this.httpClient.get<Usuario>(`${this.url_usuarios}/${id}`)
+  }
+
+  atualizar(usuario: Usuario): Observable<Usuario> {
+    return this.httpClient.put<Usuario>(`${this.url_usuarios}/${usuario.id}`, usuario)
+  }
 }
