@@ -17,7 +17,6 @@ export class UsuarioService {
     return this.httpClient.get<Usuario[]>(this.url_usuarios);
   }
 
-
   inserir(usuario: Usuario): Observable<Usuario> {
    return this.httpClient.post<Usuario>(this.url_usuarios, usuario);
   }

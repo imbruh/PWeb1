@@ -10,12 +10,15 @@ import {MatButtonModule} from '@angular/material/button';
 import { ListagemUsuarioComponent } from './listagem-usuario/listagem-usuario.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { ListagemUsuarioTabelaComponent } from './listagem-usuario-tabela/listagem-usuario-tabela.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
-  declarations: [CadastroUsuarioComponent, ListagemUsuarioComponent],
+  declarations: [CadastroUsuarioComponent, ListagemUsuarioComponent, ListagemUsuarioTabelaComponent],
   exports: [
     CadastroUsuarioComponent,
-    ListagemUsuarioComponent
+    ListagemUsuarioComponent,
+    ListagemUsuarioTabelaComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -26,7 +29,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
     FormsModule,
     MatIconModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTableModule,
   ]
 })
 export class UsuarioModule { }

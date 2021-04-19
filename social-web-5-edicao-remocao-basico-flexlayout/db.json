@@ -1,13 +1,7 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Teste",
-      "cpf": "123",
-      "idade": 34
-    },
-    {
-      "id": 3,
+      "id": 2,
       "nome": "Luiza",
       "cpf": "125",
       "idade": "20"
@@ -16,11 +10,7 @@
       "nome": "Bruna",
       "cpf": "12234",
       "idade": "20",
-      "id": 4
-    },
-    {
-      "nome": "Testando alterado",
-      "id": 5
+      "id": 3
     }
   ],
   "mensagens": []
