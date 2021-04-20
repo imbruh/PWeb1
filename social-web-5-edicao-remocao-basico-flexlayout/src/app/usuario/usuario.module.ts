@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import { ListagemUsuarioTabelaComponent } from './listagem-usuario-tabela/listagem-usuario-tabela.component';
 import {MatTableModule} from '@angular/material/table';
+import { PipesModule } from '../shared/pipes/pipes.module';
 
 @NgModule({
   declarations: [CadastroUsuarioComponent, ListagemUsuarioComponent, ListagemUsuarioTabelaComponent],
@@ -31,6 +32,7 @@ import {MatTableModule} from '@angular/material/table';
     MatButtonModule,
     FlexLayoutModule,
     MatTableModule,
+    PipesModule
   ]
 })
 export class UsuarioModule { }

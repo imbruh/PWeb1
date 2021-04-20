@@ -14,12 +14,12 @@
 
     <ng-container matColumnDef="nome">
         <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
-        <mat-cell *matCellDef="let item">{{item.nome}}</mat-cell>
+        <mat-cell *matCellDef="let item">{{item.nome | titlecase}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="cpf">
         <mat-header-cell *matHeaderCellDef>CPF</mat-header-cell>
-        <mat-cell *matCellDef="let item">{{item.cpf}}</mat-cell>
+        <mat-cell *matCellDef="let item">{{item.cpf | cpf}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="idade">
