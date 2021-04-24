@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class ListagemUsuarioTabelaComponent implements OnInit {
 
   usuarios: MatTableDataSource<Usuario>;
-  mostrarColunas = ['id', 'nome', 'cpf', 'idade', 'acoes'];
+  mostrarColunas = ['id', 'nome', 'cpf', 'idade', 'telefone', 'acoes'];
 
   constructor(private usuarioService: UsuarioService, private roteador: Router) { }
 

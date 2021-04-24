@@ -12,6 +12,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {UsuarioModule} from './usuario/usuario.module';
 import {LayoutModule} from './layout/layout.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { InterceptorModule } from './interceptor/interceptor.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatIconModule,
     UsuarioModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule,
+    InterceptorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

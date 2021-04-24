@@ -27,6 +27,11 @@
         <mat-cell *matCellDef="let item">{{item.idade}}</mat-cell>
     </ng-container>
 
+    <ng-container matColumnDef="telefone">
+        <mat-header-cell *matHeaderCellDef>Telefone</mat-header-cell>
+        <mat-cell *matCellDef="let item">{{item.telefone | telefone}}</mat-cell>
+    </ng-container>
+
     <ng-container matColumnDef="acoes">
         <mat-header-cell *matHeaderCellDef>Ações</mat-header-cell>
         <mat-cell *matCellDef="let item">
